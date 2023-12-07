@@ -1,4 +1,4 @@
-import NonFungibleToken from 0x05
+import "NonFungibleToken"
 
 pub contract CloseFar: NonFungibleToken {
   

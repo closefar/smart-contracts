@@ -1,4 +1,4 @@
-import CloseFar from 0x06
+import "CloseFar"
 
 transaction(ipfsHash: String) {
 

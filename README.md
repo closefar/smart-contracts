@@ -1,1 +1,1 @@
-# smart-contracts
+# CF-smart-contracts

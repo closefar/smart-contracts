@@ -1,5 +1,5 @@
-import CloseFar from 0x6
-import NonFungibleToken from 0x5
+import "CloseFar"
+import "NonFungibleToken"
 
 transaction {
 

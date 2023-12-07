@@ -1,5 +1,5 @@
-import CloseFar from 0x06
-import NonFungibleToken from 0x5
+import "CloseFar"
+import "NonFungibleToken"
 
 pub fun main(account: Address): [&CloseFar.NFT] {
   let collection = getAccount(account).getCapability(/public/NFTCollection)
