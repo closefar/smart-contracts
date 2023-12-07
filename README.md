@@ -1,7 +1,7 @@
 # CF-smart-contracts
 
 
-## Test on develope contract
+## Develop contract
 
 ```sh
 flow emulator
