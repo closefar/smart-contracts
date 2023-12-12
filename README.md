@@ -16,3 +16,8 @@ flow dev
 ```sh
 flow project deploy --network=testnet
 ```
+
+## Update a contract
+```sh
+flow project deploy --network=testnet --update
+```

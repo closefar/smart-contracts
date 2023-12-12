@@ -1,12 +1,12 @@
-import "CloseFar"
+import "CloseFarNFT"
 
 transaction(ipfsHash: String) {
 
   prepare(acct: AuthAccount) {
-    let collection = acct.borrow<&CloseFar.Collection>(from: /storage/NFTCollection)
+    let collection = acct.borrow<&CloseFarNFT.Collection>(from: CloseFarNFT.nftCollectionStoragePath)
                         ?? panic("the NFT collection does not exist!")
 
-    let nft <- CloseFar.createNFT(ipfsHash: ipfsHash)
+    let nft <- CloseFarNFT.createNFT(ipfsHash: ipfsHash)
 
     collection.deposit(token: <- nft)
   }

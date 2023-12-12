@@ -1,12 +1,12 @@
-import "CloseFar"
+import "CloseFarNFT"
 import "NonFungibleToken"
 
-pub fun main(account: Address): [&CloseFar.NFT] {
-  let collection = getAccount(account).getCapability(/public/NFTCollection)
-                    .borrow<&CloseFar.Collection{NonFungibleToken.CollectionPublic, CloseFar.CollectionPublic}>()
+pub fun main(account: Address): [&CloseFarNFT.NFT] {
+  let collection = getAccount(account).getCapability(CloseFarNFT.nftCollectionPublicPath)
+                    .borrow<&CloseFarNFT.Collection{NonFungibleToken.CollectionPublic, CloseFarNFT.CollectionPublic}>()
                     ?? panic("Can't get the User's collection.")
 
-  let returnVals: [&CloseFar.NFT] = []
+  let returnVals: [&CloseFarNFT.NFT] = []
 
   let ids = collection.getIDs()
   for id in ids {
