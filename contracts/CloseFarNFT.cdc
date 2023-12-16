@@ -10,11 +10,11 @@ pub contract CloseFarNFT: NonFungibleToken {
 
   pub event Deposit(id: UInt64, to: Address?)
 
-  pub let nftCollectionStoragePath: StoragePath
+  pub let CollectionStoragePath: StoragePath
   
-  pub let nftCollectionPublicPath: PublicPath
+  pub let CollectionPublicPath: PublicPath
 
-  pub let nftCollectionPrivatePath: PrivatePath
+  pub let CollectionPrivatePath: PrivatePath
 
   pub resource NFT: NonFungibleToken.INFT {
     pub let id: UInt64
@@ -85,9 +85,9 @@ pub contract CloseFarNFT: NonFungibleToken {
 
   init() {
     self.totalSupply = 0
-    self.nftCollectionStoragePath = /storage/CFNFTCollection
-    self.nftCollectionPublicPath = /public/CFNFTCollection
-    self.nftCollectionPrivatePath = /private/CFNFTCollection
+    self.CollectionStoragePath = /storage/CFNFTCollection
+    self.CollectionPublicPath = /public/CFNFTCollection
+    self.CollectionPrivatePath = /private/CFNFTCollection
     emit ContractInitialized()
   }
 }

@@ -1,23 +1,12 @@
 {
 	"contracts": {
-		"CloseFarMarketplace": "cadence/contracts/CloseFarMarketplace.cdc",
-		"CloseFarNFT": "cadence/contracts/CloseFarNFT.cdc",
-		"ExampleNFT": {
-			"source": "",
-			"aliases": {
-				"emulator": "f8d6e0586b0a20c7"
-			}
-		},
-		"FUSD": {
-			"source": "",
-			"aliases": {
-				"emulator": "f8d6e0586b0a20c7"
-			}
-		},
+		"CloseFarMarketplace": "contracts/CloseFarMarketplace.cdc",
+		"CloseFarNFT": "contracts/CloseFarNFT.cdc",
 		"FlowToken": {
 			"source": "",
 			"aliases": {
 				"emulator": "0ae53cb6e3f42a79",
+				"mainnet": "1654653399040a61",
 				"testnet": "7e60df042a9c0868"
 			}
 		},
@@ -25,67 +14,54 @@
 			"source": "",
 			"aliases": {
 				"emulator": "ee82856bf20e2aa6",
+				"mainnet": "f233dcee88fe0abe",
 				"testnet": "9a0766d93b6608b7"
-			}
-		},
-		"MetadataViews": {
-			"source": "",
-			"aliases": {
-				"emulator": "f8d6e0586b0a20c7"
-			}
-		},
-		"NFTStorefront": {
-			"source": "",
-			"aliases": {
-				"emulator": "f8d6e0586b0a20c7"
 			}
 		},
 		"NFTStorefrontV2": {
 			"source": "",
 			"aliases": {
-				"emulator": "f8d6e0586b0a20c7"
+				"mainnet": "4eb8a10cb9f87357",
+				"testnet": "2d55b98eb200daef"
 			}
 		},
 		"NonFungibleToken": {
 			"source": "",
 			"aliases": {
 				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "1d7e57aa55817448",
 				"testnet": "631e88ae7f1d7c20"
-			}
-		},
-		"RandomBeaconHistory": {
-			"source": "",
-			"aliases": {
-				"emulator": "f8d6e0586b0a20c7"
-			}
-		},
-		"ViewResolver": {
-			"source": "",
-			"aliases": {
-				"emulator": "f8d6e0586b0a20c7"
 			}
 		}
 	},
 	"networks": {
 		"emulator": "127.0.0.1:3569",
 		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testing": "127.0.0.1:3569",
 		"testnet": "access.devnet.nodes.onflow.org:9000"
 	},
 	"accounts": {
-		"closefarnft": {
-			"address": "ace21cba003913fb",
+		"acc1-testnet": {
+			"address": "dfcf3027e7725551",
 			"key": {
 				"type": "file",
-				"location": "closefar.pkey"
+				"location": "acc1-testnet.pkey"
+			}
+		},
+		"close-far-contracts": {
+			"address": "360acbf30a3133d6",
+			"key": {
+				"type": "file",
+				"location": "close-far-contracts.pkey"
 			}
 		},
 		"default": {
-			"address": "f3fcd2c1a78f5eee",
-			"key": "6d12eebfef9866c9b6fa92b97c6e705c26a1785b1e7944da701fc545a51d4673"
+			"address": "01cf0e2f2f715450",
+			"key": "581636099a02f959c2b64ebda7676941ac55f3c8d21a8fe4e29be2de2d708d15"
 		},
 		"emulator-account": {
 			"address": "f8d6e0586b0a20c7",
-			"key": "6d12eebfef9866c9b6fa92b97c6e705c26a1785b1e7944da701fc545a51d4673"
+			"key": "581636099a02f959c2b64ebda7676941ac55f3c8d21a8fe4e29be2de2d708d15"
 		}
 	},
 	"deployments": {
@@ -96,9 +72,9 @@
 			]
 		},
 		"testnet": {
-			"closefarnft": [
-				"CloseFarMarketplace",
-				"CloseFarNFT"
+			"close-far-contracts": [
+				"CloseFarNFT",
+				"CloseFarMarketplace"
 			]
 		}
 	}
