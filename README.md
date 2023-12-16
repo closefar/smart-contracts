@@ -25,6 +25,8 @@ flow scripts execute ./scripts/get_balance.cdc "<ACCOUNT_ADDRESS>" --network=tes
 flow scripts execute ./scripts/check_setup.cdc "<ACCOUNT_ADDRESS>" --network=testnet
 
 flow scripts execute ./scripts/get_nfts.cdc "<ACCOUNT_ADDRESS>" --network=testnet
+
+flow scripts execute ./scripts/get_sale_ids.cdc "<ACCOUNT_ADDRESS>" --network=testnet
 ```
 
 

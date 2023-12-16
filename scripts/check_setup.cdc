@@ -1,5 +1,3 @@
-// CheckSetupScript.cdc
-
 import "FungibleToken"
 import "FlowToken"
 import "NonFungibleToken"

@@ -41,11 +41,11 @@
 		"testnet": "access.devnet.nodes.onflow.org:9000"
 	},
 	"accounts": {
-		"acc1-testnet": {
-			"address": "dfcf3027e7725551",
+		"acc1-test": {
+			"address": "f872ba51156c76e1",
 			"key": {
 				"type": "file",
-				"location": "acc1-testnet.pkey"
+				"location": "acc1-test.pkey"
 			}
 		},
 		"close-far-contracts": {

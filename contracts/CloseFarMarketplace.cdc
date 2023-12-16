@@ -31,6 +31,17 @@ pub contract CloseFarMarketplace {
     // Event that is emitted when a seller withdraws their NFT from the sale
     pub event SaleCanceled(id: UInt64, seller: Address?)
 
+    pub struct SaleItem {
+
+        pub let price: UFix64
+    
+        pub let nft: &CloseFarNFT.NFT
+    
+        init(price: UFix64, nft: &CloseFarNFT.NFT) {
+            self.price = price
+            self.nft = nft
+        }
+    }
     // Interface that users will publish for their Sale collection
     // that only exposes the methods that are supposed to be public
     //
