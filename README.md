@@ -40,6 +40,9 @@ flow transactions send ./transactions/mint_nft.cdc "<IPFS_HASH>" --signer <ACCOU
 flow transactions send ./transactions/list_for_sale.cdc <NFT_ID> <NFT_PRICE> --signer <ACCOUNT_NAME> --network=testnet
 
 flow transactions send ./transactions/unlist_from_sale.cdc <NFT_ID> --signer <ACCOUNT_NAME> --network=testnet
+
+flow transactions send ./transactions/purchase.cdc <NFT_OWNER_ADDRESS> <NFT_ID> <NFT_PRICE> --signer <ACCOUNT_NAME> --network=testnet
+
 ```
 
 
